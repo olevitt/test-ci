@@ -1,0 +1,11 @@
+services:
+  - docker
+script:
+  - ls -alh
+deploy:
+  skip_cleanup: true
+  provider: script
+  script:
+    echo "ok"
+  on:
+    branch: master
